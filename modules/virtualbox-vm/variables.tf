@@ -31,7 +31,7 @@ variable "vm_image" {
 
 variable "cloud_init_file" {
   type    = string
-  default = "${path.module}/cloud-init.yml"
+  default = "./cloud-init.yml"
 }
 
 

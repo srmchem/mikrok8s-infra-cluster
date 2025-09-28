@@ -9,7 +9,7 @@ resource "virtualbox_vm" "nodes" {
   image   = var.vm_image
 
   # Boot from ISO
-  boot_order  = ["dvd", "disk"]
+  # boot_order  = ["dvd", "disk"]
 
   # Optional: cloud-init for automation
 #  cloud_init  = file(var.cloud_init_file)

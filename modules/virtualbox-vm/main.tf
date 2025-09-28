@@ -13,7 +13,7 @@ resource "virtualbox_vm" "nodes" {
 
   # Optional: cloud-init for automation
 #  cloud_init  = file(var.cloud_init_file)
-   user_data = base64encode(file(var.cloud_init_file)) 
+#   user_data = base64encode(file(var.cloud_init_file)) 
 
   network_adapter {
     type           = "hostonly"

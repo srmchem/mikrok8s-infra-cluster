@@ -3,5 +3,5 @@ output "vm_names" {
 }
 
 output "vm_ips" {
-  value = [for vm in virtualbox_vm.nodes : vm.ipv4_address]
+  value = [for vm in virtualbox_vm.nodes : vm.network_adapter.ipv4_address]
 }

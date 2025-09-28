@@ -15,7 +15,7 @@ module "dev_cluster" {
   memory            = var.memory
   disk_size         = var.disk_size
   vm_image          = var.vm_image
-  cloud_init_file   = ${path.module}/cloud-init.yml
+  cloud_init_file   = "${path.module}/cloud-init.yml"
   host_interface    = var.host_interface
 }
 

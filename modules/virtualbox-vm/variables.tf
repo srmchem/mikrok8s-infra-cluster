@@ -28,10 +28,12 @@ variable "vm_image" {
   type        = string
 }
 
+
 variable "cloud_init_file" {
-  description = "Path to cloud-init config file"
-  type        = string
+  type    = string
+  default = "${path.module}/cloud-init.yml"
 }
+
 
 variable "host_interface" {
   description = "VirtualBox host-only interface name"

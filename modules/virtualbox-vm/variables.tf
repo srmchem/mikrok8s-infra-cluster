@@ -11,11 +11,14 @@ variable "vm_prefix" {
 variable "cpu" {
   description = "Number of CPUs per VM"
   type        = number
+  default     = 2
 }
+
 
 variable "memory" {
   description = "Memory in MB per VM"
   type        = number
+  default  = 2048
 }
 
 variable "disk_size" {
@@ -24,10 +27,9 @@ variable "disk_size" {
 }
 
 variable "vm_image" {
-  description = "Path to the base Ubuntu ISO or image"
-  type        = string
+  type = string
+  description = "Path to the .vdi disk image"
 }
-
 
 variable "cloud_init_file" {
   type    = string
